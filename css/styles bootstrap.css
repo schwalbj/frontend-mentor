@@ -33,6 +33,11 @@ button {
   border-radius: 5px;
   border: 0;
   font-weight: 700;
+  transition: 150ms ease-in-out;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
 }
 
 body {
@@ -85,19 +90,17 @@ img {
 }
 
 @media (max-width: 1399px) {
-  img {
-  }
-
-  /* #imageDesktop {
-    display: none;
-    content: url("images/image-product-mobile.jpg");
-  } */
-
   .item-text {
     background-color: white;
     padding: 1.5rem 2rem 0rem;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .row {
+    margin: 5% auto;
   }
 }
