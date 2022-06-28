@@ -3,7 +3,7 @@
   margin: 10% auto;
 }
 
-.flex-item-text {
+.item-text {
   background-color: white;
   padding: 1.5rem 2rem 0rem;
   border-bottom-right-radius: 15px;
@@ -54,8 +54,17 @@ p {
 
 img {
   width: 100%;
+}
+
+#imageDesktop {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+#imageMobile {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0px;
 }
 
 .attribution {
@@ -68,15 +77,27 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
+@media (max-width: 768px) {
+  .row {
+    width: 80%;
+    margin: 10% auto;
+  }
+}
+
 @media (max-width: 1399px) {
   img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 0px;
   }
 
-  #imageDesktop {
-    /* display: none; */
-    content: url(https://github.com/schwalbj/frontend-mentor/blob/main/images/image-product-mobile.jpg);
+  /* #imageDesktop {
+    display: none;
+    content: url("images/image-product-mobile.jpg");
+  } */
+
+  .item-text {
+    background-color: white;
+    padding: 1.5rem 2rem 0rem;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
   }
 }
